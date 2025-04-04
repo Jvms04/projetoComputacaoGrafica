@@ -1,88 +1,178 @@
-# Projetos de Gráficos e Animações - Distribuição
+# Projetos Front-End para Computação Gráfica
 
-Neste projeto, dividimos os trabalhos de forma justa entre os membros do grupo. Abaixo estão os projetos atribuídos a cada um de nós.
+Este repositório contém uma coleção de projetos interativos desenvolvidos com foco na **Computação Gráfica** utilizando **Front-End**. Os projetos abrangem uma variedade de técnicas gráficas aplicadas em interfaces web, desde conceitos de **teoria da cor** até **transformações 3D** e **animações complexas**. Utilizando principalmente **JavaScript**, **HTML**, **CSS** e **WebGL**, os projetos permitem a exploração e visualização de diversos conceitos da computação gráfica.
 
-## Gustavo
-1. **Detecção de Bordas (Sobel, Prewitt, Canny simplificado)**
-   - Implementação de Sobel ou Prewitt para calcular gradientes de bordas.
-   
-2. **Equalização de Histograma**
-   - Ajuste de contraste global da imagem por meio da equalização do histograma.
+## O Que Você Vai Aprender
 
-3. **Segmentação Simples (Thresholding e K-means)**
-   - Separação de objetos do fundo utilizando técnicas de thresholding ou K-means.
+Os projetos deste repositório são uma maneira prática de aprender e explorar conceitos fundamentais da computação gráfica e como aplicá-los em páginas web. Entre os tópicos abordados estão:
 
-4. **Analisador de Formas e Contornos (Bounding Box & Área)**
-   - Detecção e desenho de caixas delimitadoras ao redor das formas da imagem.
+- **Teoria da Cor em Computação Gráfica**: Conversões de espaço de cor, acessibilidade visual, harmonia cromática e manipulação de paletas de cores.
+- **Processamento de Imagens**: Filtros espaciais, detecção de bordas, equalização de histograma, segmentação e análise de imagens.
+- **Primitivas 2D e 3D**: Desenho de formas, implementações de algoritmos de rasterização, transformações, clipping e projeção 3D.
+- **Animação e Física**: Animação por interpolação, animação hierárquica, física simples, animação esquelética, entre outros.
+- **Materiais e Texturas**: Aplicação de texturas, normal maps, mapeamento UV, reflexões e refrações.
 
-5. **Heatmap de Frequência de Cores**
-   - Visualização de áreas da imagem com maior incidência de determinada cor ou brilho.
+## Lista de Projetos
 
-6. **Geração Procedural de Texturas**
-   - Criação de padrões de texturas como mármore, madeira ou nuvens usando ruído.
+### Teoria da Cor em Computação Gráfica
 
-7. **Fractais Visuais (Mandelbrot, Julia Set)**
-   - Geração de imagens fractais com interação (zoom, alteração de parâmetros).
+- **Color Picker Customizado (RGB, HSL e Hex)**
+  - **Objetivo**: Demonstrar a relação entre diferentes espaços de cor (RGB, HSL, Hexadecimal).
+  - **Ensina**: Conversão entre espaços de cor, noções de matiz, saturação e luminosidade.
+  
+- **Simulador de Cegueira de Cores**
+  - **Objetivo**: Mostrar como as cores são percebidas por pessoas com diferentes tipos de daltonismo.
+  - **Ensina**: Componentes de cor, contraste e teoria aplicada à acessibilidade.
+  
+- **Criador de Paleta Harmônica**
+  - **Objetivo**: Gerar paletas harmônicas com base em teorias de cores (análoga, complementar, triádica).
+  - **Ensina**: Círculo cromático e ângulos de combinação de cores.
+  
+- **Gradiente Interativo**
+  - **Objetivo**: Explorar transições suaves entre cores.
+  - **Ensina**: Interpolação de cores e blending (mistura de cores).
+  
+- **Analisador de Contraste (WCAG Compliance)**
+  - **Objetivo**: Verificar se o contraste entre cor de fundo e texto atende aos padrões WCAG.
+  - **Ensina**: Percepção visual, luminância relativa e acessibilidade.
 
-8. **Pixel Art Generator (Posterização + Grid)**
-   - Conversão de uma imagem para um estilo "pixel art" com controle de resolução e paleta.
+- **Recriando Obras Famosas com Cores Básicas**
+  - **Objetivo**: Analisar como artistas usam teoria da cor.
+  - **Ensina**: Limitação de paleta, mistura de cores e composição estética.
 
-9. **Visualizador de Clipping (Cohen-Sutherland ou Liang-Barsky)**
-   - Demonstração de recorte de objetos fora da viewport.
+- **Aplicação de Filtros (Tint, Sepia, Grayscale, Invert)**
+  - **Objetivo**: Manipular canais de cor e aplicar filtros digitais em imagens.
+  - **Ensina**: Operações pixel a pixel com a API Canvas.
 
-## Miguel
-1. **Editor de Desenho Vetorial Básico (SVG ou Canvas)**
-   - Criação de um editor onde o usuário pode desenhar primitivas e aplicar transformações.
+### Processamento, Análise e Síntese de Imagens
 
-2. **Implementação Manual do Algoritmo de Bresenham**
-   - Desenvolvimento de um aplicativo para desenhar linhas pixel a pixel, com cálculo de cada ponto.
+- **Filtros Espaciais (Suavização e Realce)**
+  - **Objetivo**: Aplicar filtros como Gaussian Blur, sharpen e emboss.
+  - **Ensina**: Convolução 2D e operações locais em imagens.
 
-3. **Aplicação de Transformações 2D (Matrizes)**
-   - Aplicação de transformações como rotação, escala, cisalhamento em primitivas 2D.
+- **Detecção de Bordas (Sobel, Prewitt, Canny Simplificado)**
+  - **Objetivo**: Detectar bordas em imagens utilizando algoritmos de gradiente.
+  - **Ensina**: Derivadas discretas, gradiente de intensidade e thresholding.
 
-4. **Visualizador de Primitivas 3D Básicas (WebGL ou Three.js)**
-   - Exibição de primitivas 3D básicas e controle de rotação e zoom com o mouse.
+- **Equalização de Histograma**
+  - **Objetivo**: Ajustar o contraste global de uma imagem.
+  - **Ensina**: Distribuição de tons e manipulação de intensidades.
 
-5. **Construção Manual de um Cubo Wireframe (Sem biblioteca pronta)**
-   - Implementação manual de um cubo em wireframe com projeção perspectiva e rotação.
+- **Segmentação Simples (Thresholding e K-means)**
+  - **Objetivo**: Separar objetos do fundo em uma imagem.
+  - **Ensina**: Agrupamento de pixels e métricas de similaridade.
 
-6. **Explorador de Luzes e Materiais (Phong, Gouraud básico)**
-   - Visualização de primitivas 3D com luz direcional ou pontual, com ajustes em cor e intensidade.
+- **Analisador de Formas e Contornos (Bounding Box & Área)**
+  - **Objetivo**: Detectar formas e calcular áreas e perímetros.
+  - **Ensina**: Identificação de regiões conectadas e análise de contornos.
 
-7. **Representação de Materiais e Texturas**
-   - Demonstração de diferentes modelos de materiais (Phong, Lambert, PBR).
+- **Heatmap de Frequência de Cores**
+  - **Objetivo**: Visualizar quais áreas têm maior incidência de cor ou brilho.
+  - **Ensina**: Análise estatística e percepção visual.
 
-8. **Editor de Mapeamento UV Simples**
-   - Aplicação de texturas 2D em primitivas 3D com ajuste manual das coordenadas UV.
+- **Geração Procedural de Texturas**
+  - **Objetivo**: Criar texturas como mármore, madeira ou nuvens.
+  - **Ensina**: Uso de ruído para gerar padrões aleatórios.
 
-9. **Animação por Interpolação Linear e Não-Linear (Lerp / Easing)**
-   - Implementação de animações com interpolação linear e não-linear entre dois estados.
+- **Fractais Visuais (Mandelbrot, Julia Set)**
+  - **Objetivo**: Gerar imagens fractais interativas com zoom.
+  - **Ensina**: Recursão visual e conceitos de complexidade emergente.
 
-## João Vitor
-1. **Gerador Procedural de Prismas e Poliedros**
-   - Geração de prismas e poliedros simples definidos pelo usuário com controle de lados e altura.
+- **Morphing Entre Duas Imagens**
+  - **Objetivo**: Interpolar entre duas imagens progressivamente.
+  - **Ensina**: Interpolação linear e correspondência de pontos.
 
-2. **Animação Hierárquica (Cinemática Direta)**
-   - Animação de figuras compostas com transformações hierárquicas (ex: braço mecânico).
+### Primitivas 2D e 3D
 
-3. **Física Básica e Simulação (Gravidade, Colisão Simples)**
-   - Implementação de animações com gravidade e colisões simples entre objetos.
+- **Editor de Desenho Vetorial Básico (SVG ou Canvas)**
+  - **Objetivo**: Criar primitivas 2D e aplicar transformações.
+  - **Ensina**: Algoritmo de rasterização e transformações geométricas.
 
-4. **Morphing entre Formas**
-   - Interpolação entre duas formas diferentes ao longo do tempo.
+- **Implementação Manual do Algoritmo de Bresenham**
+  - **Objetivo**: Desenhar linhas pixel a pixel.
+  - **Ensina**: Algoritmo de rasterização eficiente.
 
-5. **Keyframe Animation (Animação Baseada em Quadro-Chave)**
-   - Definição e interpolação de quadros-chave para gerar animações suaves.
+- **Visualizador de Clipping (Cohen-Sutherland ou Liang-Barsky)**
+  - **Objetivo**: Visualizar como objetos são recortados na viewport.
+  - **Ensina**: Algoritmos clássicos de clipping e eficiência no pipeline gráfico.
 
-6. **Path Animation (Animação em Curvas)**
-   - Criação de animações onde objetos seguem uma curva (Bezier, spline, circular).
+- **Aplicação de Transformações 2D (Matrizes)**
+  - **Objetivo**: Aplicar transformações como rotação e escala em 2D.
+  - **Ensina**: Matrizes 2D e não-comutatividade das transformações.
 
-7. **Animação Procedural (Ondas, Ruídos, Oscilações)**
-   - Implementação de animações com movimentos baseados em funções matemáticas como Perlin Noise.
+- **Visualizador de Primitivas 3D Básicas (WebGL ou Three.js)**
+  - **Objetivo**: Exibir formas 3D e permitir interação com rotação e zoom.
+  - **Ensina**: Controle de câmera e projeção 3D.
 
-8. **Skinning e Animação Esquelética (Intro Simples)**
-   - Demonstração de personagens ou modelos 3D animados com esqueleto.
+- **Construção Manual de um Cubo Wireframe**
+  - **Objetivo**: Criar um cubo 3D e aplicar projeção perspectiva.
+  - **Ensina**: Matrizes 3D e conceitos de pipeline gráfico.
 
-9. **Demonstração de Ambiente com Textura de Refração e Reflexão (Cubemaps)**
-   - Visualização de esferas com reflexão e refração de ambientes, utilizando cubemaps.
+- **Gerador Procedural de Prismas e Poliedros**
+  - **Objetivo**: Gerar prismas e poliedros com controle de parâmetros.
+  - **Ensina**: Geometria algorítmica e topologia 3D.
 
+### Animação e Física
+
+- **Animação de Transformações 3D**
+  - **Objetivo**: Criar animações contínuas de rotação 3D.
+  - **Ensina**: Matrizes compostas e sistemas de coordenadas.
+
+- **Explorador de Luzes e Materiais (Phong, Gouraud básico)**
+  - **Objetivo**: Visualizar efeitos de luz em primitivas 3D.
+  - **Ensina**: Modelos de sombreamento e propriedades de materiais.
+
+- **Textura Animada ou Dinâmica (GIF ou Sprite Sheet sobre Objeto)**
+  - **Objetivo**: Aplicar texturas animadas em malhas 3D.
+  - **Ensina**: Manipulação de texturas em tempo real.
+
+- **Animação por Interpolação Linear e Não-Linear**
+  - **Objetivo**: Criar animações com curvas de interpolação.
+  - **Ensina**: Conceitos de interpolação e animações suaves.
+
+- **Animação Hierárquica (Cinemática Direta)**
+  - **Objetivo**: Montar figuras compostas com animações hierárquicas.
+  - **Ensina**: Transformações compostas e cinemática direta.
+
+- **Física Básica e Simulação (Gravidade, Colisão Simples)**
+  - **Objetivo**: Implementar animações com física simples (gravidade, colisões).
+  - **Ensina**: Movimento, aceleração e controle de tempo.
+
+## Tecnologias Utilizadas
+
+- **HTML5**, **CSS3**, **JavaScript**: Estruturação de interfaces e manipulação de gráficos.
+- **Canvas API**: Para renderizar gráficos 2D e manipular pixels.
+- **WebGL**, **Three.js**: Para gráficos 3D e animações.
+- **Perlin Noise**, **Simplex Noise**: Para geração procedural de texturas.
+
+## Como Rodar os Projetos
+
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    ```
+
+2. Abra o diretório do projeto e inicie um servidor local (por exemplo, usando `Live Server` no VSCode ou Python):
+    ```bash
+    python -m http.server
+    ```
+
+3. Acesse o projeto no navegador: `http://localhost:8000`.
+
+## Contribuições
+
+Sinta-se à vontade para contribuir com novos projetos ou melhorias! Abra uma **issue** ou envie um **pull request** com suas sugestões.
+
+---
+
+### Explicação do README:
+
+- **Introdução sobre a área**: Explica o que é computação gráfica e como ela se aplica ao front-end.
+- **Lista de projetos**: Cada projeto é descrito brevemente, com foco no que ele ensina e os conceitos envolvidos.
+- **Tecnologias**: Explica as tecnologias usadas nos projetos, como HTML, CSS, JavaScript, e WebGL.
+- **Instruções de execução**: Um guia simples de como rodar os projetos localmente.
+- **Licença e contribuições**: Instruções de como contribuir e informações sobre a licença.
+
+Esse formato de **README.md** proporciona um resumo claro e organizado dos projetos e também ajuda outros desenvolvedores a entenderem rapidamente o que o repositório oferece.
+
+**Desenvolvido por Gustavo Pereira, João Vitor e Miguel Migailides**.
