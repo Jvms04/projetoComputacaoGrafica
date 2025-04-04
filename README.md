@@ -149,7 +149,7 @@ Os projetos deste repositório são uma maneira prática de aprender e explorar 
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    git clone https://github.com/Jvms04/projetoComputacaoGrafica.git
     ```
 
 2. Abra o diretório do projeto e inicie um servidor local (por exemplo, usando `Live Server` no VSCode ou Python):
